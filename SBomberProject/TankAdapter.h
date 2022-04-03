@@ -4,9 +4,6 @@
 #include "DestroyableGroundObject.h"
 
 class TankAdapter : public DestroyableGroundObject {
-private:
-    TankAdaptee tankAdaptee;
-
 public:
     TankAdapter() {}
     ~TankAdapter() {}
@@ -50,4 +47,7 @@ public:
     {
         return tankAdaptee.GetWidth();
     }
+    
+private:
+    TankAdaptee tankAdaptee;
 };
